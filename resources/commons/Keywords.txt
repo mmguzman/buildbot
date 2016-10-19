@@ -1,0 +1,17 @@
+*** Settings ***
+Documentation  The resource file with reusable variables.
+
+Library  Screenshot
+Library  OperatingSystem
+Library  ../../resources/methods/UIMethods.py
+
+*** Variables ***
+${screenshot_directory}  report/screenshots
+
+*** Keywords ***
+Take Screenshot If Test Fails
+    [Arguments]  ${test_case_name}
+    Run Keyword If Test Failed  Take screenshot  ${test_case_name}
+
+Delete screenshot directory
+    Remove directory  ${screenshot_directory}  True

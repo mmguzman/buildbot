@@ -1,0 +1,9 @@
+*** Settings ***
+Documentation  The resource file with reusable variables.
+
+*** Variables ***
+#************************** Browser ******************************
+${BROWSER}  firefox
+${IMPLICIT_WAIT}  10
+${EXPLICIT_WAIT}  20
+${TEMPLATE}  marquee

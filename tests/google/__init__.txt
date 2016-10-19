@@ -1,0 +1,14 @@
+*** Settings ***
+Documentation  Bare Bones Test Suite
+
+Library  ../../tests/steps/LoginSteps.py
+
+Suite Setup  Setup
+Suite Teardown  Teardown
+
+*** Keywords ***
+Setup
+    Open url  www.google.com
+
+Teardown
+    Close browser
