@@ -57,7 +57,6 @@ def found_window(window_name):
             return False
         else:
             return True
-
     return predicate
 
 
@@ -111,6 +110,7 @@ def _norm_path(path):
 def get_screenshot(file_name):
     """
     Takes an screenshot using Selenium Library for Python.
+    TEST!
     """
     driver = DriverManager().get_instance().get_driver()
     driver.save_screenshot(file_name)
